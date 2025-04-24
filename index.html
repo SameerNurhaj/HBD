@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Romantic Birthday Surprise</title>
+<link rel="stylesheet" href="sameer.css">
+</head>
+<body>
+    <div id="confetti-container"></div>
+<audio id="romantic-music" loop>
+  <source src="Birthday - FCM (No Copyright Music Instrumental) [O1nHwyigtmM].mp3" type="audio/mp3">
+</audio>
+
+<div id="form-section"  class="active">
+  <h2> Create a Birthday Card</h2>
+  <input type="text" id="name" placeholder="Your Name" required />
+  <input type="number" id="age" placeholder="Your Age" required />
+  <textarea id="message" placeholder="Your Message of Love 💌" required></textarea>
+  <button onclick="createCard()">Create</button> 
+</div>
+<div  id="card-section">
+  <h1 id="greeting"></h1>
+  <p id="birthday-message"></p>
+  <div class="cake">
+    <div class="layer layer-bottom"></div>
+    <div class="layer layer-middle"></div>
+    <div class="layer layer-top"></div>
+    <div class="candles" id="candles"></div>
+  </div>
+  <p style="color:white;">Blow near the mic to blow out the candles 🎤</p>
+</div>
+<script src="sameer.js"></script>
+</body>
+</html>
